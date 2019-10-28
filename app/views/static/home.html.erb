@@ -1,0 +1,14 @@
+<h1>Bonjour et bienvenue sur la page des potins!</h1>
+<h3>Voici la liste des derniers potins publiés</h3>
+
+<% Gossip.all.each do |gossip| %>
+
+
+<%=  gossip.user.first_name%><br>
+<%= gossip.title %><br><a href="/gossip/<%=gossip.id%>">détail du gossip</a> <br><br>
+
+<% end %>
+
+
+	
+	
