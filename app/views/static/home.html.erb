@@ -1,11 +1,14 @@
 <h1>Bonjour et bienvenue sur la page des potins!</h1>
 <h3>Voici la liste des derniers potins publiés</h3>
 
+<p>Pour publier un nouveau potin c'est par ici --> <%= link_to "I love gossips", new_gossip_path %></p>
+
+
 <% Gossip.all.each do |gossip| %>
 
 
 <%=  gossip.user.first_name%><br>
-<%= gossip.title %><br><a href="/gossip/<%=gossip.id%>">détail du gossip</a> <br><br>
+<%= gossip.title %><br><%= link_to "Détails du gossip", gossip_path(gossip.id) %> <br><br>
 
 <% end %>
 

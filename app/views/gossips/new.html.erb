@@ -1,0 +1,12 @@
+<h1>Bonjour les #GossipAddicts,</h1>
+
+<p>Tu peux poster un nouveau gossip dans le formulaire.</p>
+
+<form action= <%= gossips_path %> method="POST">
+      Title du Gossip:<br>
+  <input type="text" name="title" ><br>
+  Dis nous tout:<br>
+  <input type="text" name="content"><br><br>
+  <input type="submit" value="Envoyer">
+</form>
+
