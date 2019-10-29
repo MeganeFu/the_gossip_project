@@ -4,9 +4,8 @@ Rails.application.routes.draw do
 	get '/contact', to: 'static#contact'
 	root :to => 'static#home'
 	get '/welcome/:user_entry', to: 'dynamic#welcome'
-#  get '/gossip/:id', to: 'gossip#show_gossip', as: 'show_gossip'
 	get '/user/:id', to: 'dynamic#show_user', as: 'show_user'
 	
-	resources :gossips, except: [:index, :destroy] 
+	resources :gossips, except: [:destroy] 
 
 end

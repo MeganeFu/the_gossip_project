@@ -7,5 +7,10 @@ class GossipsController < ApplicationController
 	def new
 	end 
 	
+	def create
+	@gossip = Gossip.new('title' => params[:tile], 'content' => params[:content])
+	end
+	
+	
 	
 end 

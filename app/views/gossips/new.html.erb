@@ -2,11 +2,24 @@
 
 <p>Tu peux poster un nouveau gossip dans le formulaire.</p>
 
-<form action= <%= gossips_path %> method="POST">
-      Title du Gossip:<br>
-  <input type="text" name="title" ><br>
-  Dis nous tout:<br>
-  <input type="text" name="content"><br><br>
-  <input type="submit" value="Envoyer">
-</form>
+<html>
+  <body>
+    <!-- ... -->
 
+    <%= form_tag url_for(action: 'create'), method: "post" do %>
+
+      <%= label_tag 'Titre du gossip' %><br>
+      <%= text_field_tag 'title'  %>
+      <br /> <br />
+
+      <%= label_tag 'Dis nous tout' %><br>
+      <%= text_area_tag 'content'  %>
+      <br /> <br />
+
+      <%= submit_tag "Create Post" %>
+
+    <% end %>
+
+    <!-- ... -->
+  </body>
+</html>

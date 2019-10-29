@@ -6,7 +6,6 @@ class StaticController < ApplicationController
 	end
 	
 	def home
-#		@gossip = Gossip.find(params[:id])
   end
 	
 end
