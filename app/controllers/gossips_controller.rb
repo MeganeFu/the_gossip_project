@@ -5,10 +5,24 @@ class GossipsController < ApplicationController
 	end
 	
 	def new
+		@gossip = Gossip.new
 	end 
 	
 	def create
-	@gossip = Gossip.new('title' => params[:tile], 'content' => params[:content])
+		
+		u = User.first
+		puts "ok"
+		@gossip = Gossip.new
+		@gossip.title = params[:title]
+		@gossip.content = params[:content]
+		@gossip.user = u
+		@gossip.save
+		
+		if @gossip.save
+			redirect_to root_path
+		else render "new"
+
+	end
 	end
 	
 	
