@@ -1,7 +1,9 @@
-<h1>Bonjour et bienvenue sur la page des potins!</h1>
-<h3>Voici la liste des derniers potins publiés</h3>
-
-<p>Pour publier un nouveau potin c'est par ici --> <%= link_to "I love gossips", new_gossip_path %></p>
+<div class="jumbotron">
+  <h1 class="display-4">Bonjour et bienvenue sur la page des potins!</h1>
+  <p class="lead">Voici la liste des derniers potins publiés. Ici tu pourras voir tous les derniers gossips publiés, en poster un toi-même...on va s'amuser hihi</p>
+  <hr class="my-4">
+  <p>Pour publier un nouveau potin c'est par ici --> <%= link_to "I love gossips", new_gossip_path %></p>
+</div>
 
 
 <% Gossip.all.each do |gossip| %>
