@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 	get '/user/:id', to: 'dynamic#show_user', as: 'show_user'
 	
 	resources :gossips, except: [:destroy] 
+	
+	resources :cities
 
 end

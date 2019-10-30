@@ -2,6 +2,8 @@ class GossipsController < ApplicationController
 	
 	def show
 		@gossip = Gossip.find(params[:id])
+#		@city = City.find(params[:id])
+		
 	end
 	
 	def new

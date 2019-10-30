@@ -1,9 +1,12 @@
+<br><br><h1>Bienvenue sur la page de <%= @user.first_name%></h1><br><br><hr></hr>
+<p>Son prénom: <%= @user.first_name%></p>
+<p>Son nom: <%= @user.last_name%></p>
+<p>Sa description : <%= @user.description%></p>
+<p>Son âge : <%= @user.age%> ans</p>
+<p>Son email : <%= @user.email%></p>
+<p>Sa Ville : <%= @user.city.name %></p>
 
-<h1>Bienvenue sur la page de <%= @user.first_name%> <%= @user.last_name%></h1>
-<p>Description : <%= @user.description%></p>
-<p>Age : <%= @user.age%></p>
-<p>Email : <%= @user.email%></p>
-<p>Ville : <%= @city.name %></p>
+<%= link_to "page du de la ville", city_path(@city.id) %>
 
 
 

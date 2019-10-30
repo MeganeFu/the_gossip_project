@@ -1,9 +1,11 @@
-<h1>Bienvenue sur la page du gossip n° <%= @gossip.id %></h1>
-<p>Il a été écrit par : <%= @gossip.user.first_name %></p> 
-<a <%= link_to "Page de"+@gossip.user.first_name, show_user_path(:id => @gossip.user_id) %> </a>
-<p>Crée le : <%= @gossip.created_at%></p>
-<p>Son titre est : <%= @gossip.title%></p>
-<p>Voici le gossip : <%= @gossip.content%></p><br><br>
+<br><br><h1>Bienvenue sur la page du gossip n° <%= @gossip.id %></h1><br><br>
+<h3>Il a été écrit par : <%= @gossip.user.first_name %> --> <a <%= link_to "Page de " +@gossip.user.first_name, show_user_path(:id => @gossip.user_id) %> </a></h3> 
+<br><br><hr></hr>
+
+<p>Titre du gossip : <%= @gossip.title%></p>
+<p>Voici le gossip : <%= @gossip.content%></p>
+<p>Ville de l'auteur : <%= @gossip.user.city.name%></p>
+<p>Crée le : <%= @gossip.created_at%></p><br><br>
 
 
 	

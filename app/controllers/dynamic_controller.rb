@@ -8,7 +8,7 @@ class DynamicController < ApplicationController
 	def show_user
 
 		@user = User.find(params[:id])
-  	@city = City.find(@user.city_id)
+  	@city = City.find(params[:id])
 	end
 	
 	
