@@ -44,6 +44,14 @@ def update
     render :edit
   end
 end
+	
+	def destroy
+		@gossip = Gossip.find(params[:id])
+		@gossip.destroy
+		
+		redirect_to root_path
+		
+	end 
 	 
 	
 	

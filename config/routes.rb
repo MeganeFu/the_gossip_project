@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 	get '/welcome/:user_entry', to: 'dynamic#welcome'
 	get '/user/:id', to: 'dynamic#show_user', as: 'show_user'
 	
-	resources :gossips, except: [:destroy] 
+	resources :gossips
 	
 	resources :cities
 

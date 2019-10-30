@@ -8,7 +8,9 @@
 <p>Crée le : <%= @gossip.created_at%></p>
 <br><br>
 
-<%= link_to "Tu peux modifier le gossip", edit_gossip_path(@gossip.id) %>
+<a class="btn btn-dark"<%= link_to "Modifier le gossip", edit_gossip_path(@gossip.id)%> </a>
+
+<a href="<%= @gossip %>" class="btn btn-danger" data-confirm=" Go ?" data-method="DELETE">Supprimer</a>
 
 
 	
