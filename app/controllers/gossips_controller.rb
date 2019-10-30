@@ -29,6 +29,22 @@ class GossipsController < ApplicationController
 	end
 	end
 	
+def edit
+	@gossip = Gossip.find(params[:id])
+end
+	
+	
+def update
+  @gossip = Gossip.find(params[:id])
+	gossip_params = params.require(:gossip).permit(:title, :content)
+	if @gossip.update(gossip_params)
+		flash[:success] = "le gossip est modifié"
+    redirect_to root_path
+  else
+    render :edit
+  end
+end
+	 
 	
 	
 end 
