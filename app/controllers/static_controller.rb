@@ -1,11 +1,5 @@
 class StaticController < ApplicationController
-	def team
-	end
 	
-	def contact
-	end
-	
-	def home
-  end
-	
+def index
+end
 end

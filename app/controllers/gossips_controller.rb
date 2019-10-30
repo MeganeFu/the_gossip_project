@@ -22,7 +22,7 @@ class GossipsController < ApplicationController
 		
 		if @gossip.save
 			flash[:success] = "Tu as ajouter ton super potin."
-			redirect_to root_path
+			redirect_to welcome_index_path
 			
 		else render "new"
 
@@ -39,7 +39,7 @@ def update
 	gossip_params = params.require(:gossip).permit(:title, :content)
 	if @gossip.update(gossip_params)
 		flash[:success] = "le gossip est modifié"
-    redirect_to root_path
+    redirect_to welcome_index_path
   else
     render :edit
   end
@@ -49,7 +49,7 @@ end
 		@gossip = Gossip.find(params[:id])
 		@gossip.destroy
 		
-		redirect_to root_path
+		redirect_to welcome_index_path
 		
 	end 
 	 
