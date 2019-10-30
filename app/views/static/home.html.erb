@@ -9,8 +9,16 @@
 <% Gossip.all.each do |gossip| %>
 
 
-<%=  gossip.user.first_name%><br>
-<%= gossip.title %><br><%= link_to "Détails du gossip", gossip_path(gossip.id) %> <br><br>
+<div class="card">
+  <div class="card-header">
+    <%=  gossip.user.first_name%>
+  </div><div class="card-body">
+    <h5 class="card-title"><%= gossip.title %></h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a class="btn btn-dark"<%= link_to "Détails du gossip", gossip_path(gossip.id) %></a>
+  </div>
+</div>
+
 
 <% end %>
 

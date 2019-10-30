@@ -2,3 +2,11 @@
 <br><br>
 <h2>Tous les gossips de notre ville sont sur cette page</h2>
 <br><br>
+
+<% @city.name do |gossip| %>
+
+<%=  gossip.user.first_name%><br>
+<%= gossip.title %><br> <br><br>
+
+<% end %>
+
