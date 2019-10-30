@@ -21,7 +21,9 @@ class GossipsController < ApplicationController
 		@gossip.save
 		
 		if @gossip.save
+			flash[:success] = "Tu as ajouter ton super potin."
 			redirect_to root_path
+			
 		else render "new"
 
 	end

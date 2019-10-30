@@ -3,10 +3,9 @@
 <h2>Tous les gossips de notre ville sont sur cette page</h2>
 <br><br>
 
-<% @city.name do |gossip| %>
-
-<%=  gossip.user.first_name%><br>
-<%= gossip.title %><br> <br><br>
+<% @gossips.each do |gossip| %>
+	
+<p>Titre du gossip : <%= @gossip.title%></p>
+<p>Voici le gossip : <%= @gossip.content%></p>
 
 <% end %>
-

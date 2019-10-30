@@ -1,3 +1,12 @@
+<% if flash[:success] %>
+   <div class="alert alert-success" role="alert">
+   <h4 class="alert-heading">Whaooooo!</h4>
+   <hr>
+   <div class="success"><%= flash[:success]%></div>
+   </div>
+ <% end %>
+
+
 <div class="jumbotron">
   <h1 class="display-4">Bonjour et bienvenue sur la page des potins!</h1>
   <p class="lead">Voici la liste des derniers potins publiés. Ici tu pourras voir tous les derniers gossips publiés, en poster un toi-même...on va s'amuser hihi</p>
@@ -14,7 +23,7 @@
     <%=  gossip.user.first_name%>
   </div><div class="card-body">
     <h5 class="card-title"><%= gossip.title %></h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <p class="card-text"></p>
     <a class="btn btn-dark"<%= link_to "Détails du gossip", gossip_path(gossip.id) %></a>
   </div>
 </div>
