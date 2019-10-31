@@ -1,5 +1,7 @@
 class GossipsController < ApplicationController
 	
+before_action :authenticate_user
+	
 	def show
 		@gossip = Gossip.find(params[:id])
 #		@city = City.find(params[:id])
@@ -52,7 +54,14 @@ end
 		redirect_to welcome_index_path
 		
 	end 
-	 
-	
+
+   private
+  
+    def authenticate_user
+        unless current_user
+            flash[:danger] = "Veuillez-vous connecter pour accéder au contenu."
+            redirect_to new_session_path
+        end
+    end
 	
 end 
