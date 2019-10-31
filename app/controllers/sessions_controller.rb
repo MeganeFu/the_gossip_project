@@ -14,13 +14,13 @@ class SessionsController < ApplicationController
 			flash[:success] = "Welcome back"
       redirect_to root_path
     else
-      flash.now[:alert] = "Email or password is invalid"
+      flash.now[:error] = "Email ou mot de passe invalide"
       render "new"
     end
   end  
-#	
-#	def destroy
-#    session[:user_id] = nil
-#    redirect_to welcome_index_path, notice: "Logged out!"
-#  end
+	
+	def destroy
+    session[:user_id] = nil
+    redirect_to root_path, notice: "Logged out!"
+  end
 end
