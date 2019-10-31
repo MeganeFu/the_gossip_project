@@ -1,6 +1,7 @@
 class GossipsController < ApplicationController
 	
 before_action :authenticate_user
+before_action :right_user, only: [:edit, :update, :destroy]
 	
 	def show
 		@gossip = Gossip.find(params[:id])
@@ -62,5 +63,13 @@ end
             redirect_to new_session_path
         end
     end
+	
+	def right_user
+    @gossip=Gossip.find(params[:id])
+    @user=User.find(@gossip.user_id)
+	 unless current_user == @user
+       flash[:danger] = "Tu ne peux pas modifier ce gossip"
+       redirect_to gossips_path 		
+	 end
 	
 end 
