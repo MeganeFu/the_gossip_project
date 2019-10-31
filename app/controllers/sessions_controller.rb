@@ -14,7 +14,8 @@ class SessionsController < ApplicationController
 			flash[:success] = "Welcome back"
       redirect_to root_path
     else
-      flash.now[:error] = "Email ou mot de passe invalide"
+			
+      flash.now[:alert] = "Email ou mot de passe invalide"
       render "new"
     end
   end  
