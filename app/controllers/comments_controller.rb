@@ -8,10 +8,11 @@ class CommentsController < ApplicationController
 		def create
 		
 		u = User.first
+		@gossip = Gossip.find(params[:id])
 		puts "ok"
-		@comment = Comment.new
-		@comment.content = params[:content]
-	
+		@comment = Comment.new('content' => params[:content])
+#		@comment.content = params[:content]
+	  @comment.gossip = @gossip
 		@comment.user = u
 		@comment.save
 		

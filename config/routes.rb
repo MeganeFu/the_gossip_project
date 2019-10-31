@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :welcome
 	resources :team
 	resources :contact
-  resources :user
+  resources :users
 	resources :gossips
   resources :cities
 	resources :comments

@@ -6,5 +6,6 @@ class User < ApplicationRecord
 	has_many :private_messages, through: :recipients
 	has_many :comments
 	has_many :likes
+	has_secure_password
 end
 
