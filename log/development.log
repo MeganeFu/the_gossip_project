@@ -3012,3 +3012,343 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 48ms (Views: 40.8ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Harry"], ["last_name", "Pitts"], ["email", "cathie@example.org"], ["age", 17], ["description", "Sashay away."], ["city_id", 10], ["created_at", "2019-10-31 23:17:47.959420"], ["updated_at", "2019-10-31 23:17:47.959420"], ["password_digest", "LmPvD8qA8mKb"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (40.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Brandon"], ["last_name", "Irons"], ["email", "wilmer.okeefe@example.net"], ["age", 59], ["description", "You betta work."], ["city_id", 1], ["created_at", "2019-10-31 23:17:48.007098"], ["updated_at", "2019-10-31 23:17:48.007098"], ["password_digest", "95P6iQk99CyRoA"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Tommy"], ["last_name", "Gunn"], ["email", "mauro.hoppe@example.net"], ["age", 30], ["description", "You're a winner, baby!"], ["city_id", 18], ["created_at", "2019-10-31 23:17:48.013513"], ["updated_at", "2019-10-31 23:17:48.013513"], ["password_digest", "DcT4sEfE1"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Sam"], ["last_name", "Manilla"], ["email", "breana@example.org"], ["age", 55], ["description", "Life is about using the whole box of crayons."], ["city_id", 18], ["created_at", "2019-10-31 23:17:48.018239"], ["updated_at", "2019-10-31 23:17:48.018239"], ["password_digest", "F39yC98sFj1"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Pat"], ["last_name", "Downe"], ["email", "rudolph@example.net"], ["age", 67], ["description", "Life is about using the whole box of crayons."], ["city_id", 2], ["created_at", "2019-10-31 23:17:48.022973"], ["updated_at", "2019-10-31 23:17:48.022973"], ["password_digest", "Po5KzFrSp47Mt28"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (1.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Issy-les-Moulineaux"], ["zip_code", "22060"], ["created_at", "2019-10-31 23:17:48.026122"], ["updated_at", "2019-10-31 23:17:48.026122"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dunkerque14"], ["zip_code", "94181"], ["created_at", "2019-10-31 23:17:48.031755"], ["updated_at", "2019-10-31 23:17:48.031755"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bordeaux"], ["zip_code", "60799"], ["created_at", "2019-10-31 23:17:48.034921"], ["updated_at", "2019-10-31 23:17:48.034921"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cannes"], ["zip_code", "04010"], ["created_at", "2019-10-31 23:17:48.037788"], ["updated_at", "2019-10-31 23:17:48.037788"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Boulogne-Billancourt"], ["zip_code", "62209"], ["created_at", "2019-10-31 23:17:48.045654"], ["updated_at", "2019-10-31 23:17:48.045654"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Mort"], ["last_name", "Tallity"], ["email", "hwa@example.com"], ["age", 36], ["description", "Extravaganza eleganza!"], ["city_id", 10], ["created_at", "2019-10-31 23:17:59.456676"], ["updated_at", "2019-10-31 23:17:59.456676"], ["password_digest", "9WsDlFzCc2MuLy8"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Robin"], ["last_name", "Meeblind"], ["email", "galina.kirlin@example.net"], ["age", 20], ["description", "Now listen, I gotta tell ya..."], ["city_id", 9], ["created_at", "2019-10-31 23:17:59.463429"], ["updated_at", "2019-10-31 23:17:59.463429"], ["password_digest", "RpGrH4sB"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Ed"], ["last_name", "Venture"], ["email", "gaston_schowalter@example.org"], ["age", 58], ["description", "In the great tradition of Paris is Burning, \"Get out your Library Cards!\""], ["city_id", 13], ["created_at", "2019-10-31 23:17:59.468956"], ["updated_at", "2019-10-31 23:17:59.468956"], ["password_digest", "YrSdN6oA"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Mike"], ["last_name", "Rohsopht"], ["email", "maria@example.net"], ["age", 50], ["description", "Life is about using the whole box of crayons."], ["city_id", 24], ["created_at", "2019-10-31 23:17:59.474756"], ["updated_at", "2019-10-31 23:17:59.474756"], ["password_digest", "CzE6fBxAdItCc2U"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "age", "description", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["first_name", "Terry"], ["last_name", "Achey"], ["email", "rogelio@example.org"], ["age", 47], ["description", "Because reading is what?"], ["city_id", 4], ["created_at", "2019-10-31 23:17:59.479550"], ["updated_at", "2019-10-31 23:17:59.479550"], ["password_digest", "8Ya2F42o"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.7ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Villeurbanne"], ["zip_code", "39052"], ["created_at", "2019-10-31 23:17:59.482424"], ["updated_at", "2019-10-31 23:17:59.482424"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Créteil"], ["zip_code", "97022"], ["created_at", "2019-10-31 23:17:59.485944"], ["updated_at", "2019-10-31 23:17:59.485944"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (1.0ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Issy-les-Moulineaux"], ["zip_code", "49834"], ["created_at", "2019-10-31 23:17:59.488537"], ["updated_at", "2019-10-31 23:17:59.488537"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Clermont-Ferrand"], ["zip_code", "23150"], ["created_at", "2019-10-31 23:17:59.492337"], ["updated_at", "2019-10-31 23:17:59.492337"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rouen"], ["zip_code", "99354"], ["created_at", "2019-10-31 23:17:59.495717"], ["updated_at", "2019-10-31 23:17:59.495717"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+Started GET "/welcome" for 127.0.0.1 at 2019-11-01 00:18:24 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/cex/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/welcome/index.html.erb:26
+  Rendered welcome/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 237ms (Views: 226.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-11-01 00:18:29 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 16.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2019-11-01 00:18:30 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-11-01 00:18:31 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 46ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-11-01 00:18:43 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"90esHfagltvg/qrjNW879bYTg511C6QMRS13q2GyzMhOwe8bZ6uad6DPUkkU2PnGKR+qJTGDikrzVMAbsS6OXw==", "first_name"=>"megane", "email"=>"meg2@gmail.com", "password"=>"[FILTERED]", "commit"=>"S'inscrire"}
+  [1m[36mCity Load (0.9ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:23
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "email", "city_id", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "megane"], ["email", "meg2@gmail.com"], ["city_id", 1], ["created_at", "2019-10-31 23:18:43.514761"], ["updated_at", "2019-10-31 23:18:43.514761"], ["password_digest", "$2a$10$8fhFpOzIBFaZRkVmp/6gEOzaiTfu/oX6.TbuUOVhiqFyNiFmqKXGO"]]
+  ↳ app/controllers/users_controller.rb:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:23
+Redirected to http://localhost:3000/welcome
+Completed 302 Found in 107ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2019-11-01 00:18:43 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/welcome/index.html.erb:26
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2019-11-01 00:18:47 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2019-11-01 00:18:54 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zDc4gaND9tXkxehSEfP4/dWMKx/FFUCOS6A14wFCK4wFYhF/5cMAuAMcZR8Zuvs51ttaiDUC2SbnQQRAFBYCSQ==", "email"=>"meg2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "meg2@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:11
+Redirected to http://localhost:3000/
+Completed 302 Found in 72ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-11-01 00:18:54 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/static/index.html.erb:21
+  Rendered static/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2019-11-01 00:18:58 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/welcome/index.html.erb:26
+  Rendered welcome/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.7ms)
+
+
