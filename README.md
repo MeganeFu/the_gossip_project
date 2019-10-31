@@ -25,6 +25,6 @@ Things you may want to cover:
 
 
 bundle install
+rails db:create
 rails db:migrate
-rails db:seed
 rails server 
