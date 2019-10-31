@@ -14,12 +14,11 @@ before_action :authenticate_user
 	
 	def create
 		
-		u = User.first
-		puts "ok"
+	
 		@gossip = Gossip.new
 		@gossip.title = params[:title]
 		@gossip.content = params[:content]
-		@gossip.user = u
+		@gossip.user = current_user
 		@gossip.save
 		
 		if @gossip.save
