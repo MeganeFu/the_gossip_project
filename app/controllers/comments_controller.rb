@@ -3,26 +3,22 @@ class CommentsController < ApplicationController
 	def new
 		
 		@comment = Comment.new
-	end
-	
-		def create
-		
-		u = User.first
-		@gossip = Gossip.find(params[:id])
-		puts "ok"
-		@comment = Comment.new('content' => params[:content])
-#		@comment.content = params[:content]
-	  @comment.gossip = @gossip
-		@comment.user = u
-		@comment.save
-		
-		if @comment.save
-			flash[:success] = "Tu as ajouter ton super commentaire."
-			redirect_to gossip_path
-			
-		else render "new"
 
 	end
-	end
 	
-end 
+	def create
+		user = User.first
+		@comment = Comment.new(content: params[:content], gossip: Gossip.find(params[:id]), user_id: user.id)
+                  			 
+                  			 	 
+   		if @comment.save # essaie de sauvegarder en base @gossip
+     		 redirect_to gossip_path(params[:gossip_id])
+     	else
+     		 redirect_to gossip_path(params[:gossip_id])
+    	end
+
+	end
+
+
+end
+

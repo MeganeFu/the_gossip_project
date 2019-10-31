@@ -1,23 +1,26 @@
 class SessionsController < ApplicationController
 	
-	def new
 	
-	end
+  def new
+		
+  end  
 	
-
+	
 	def create
-  # cherche s'il existe un utilisateur en base avec l’e-mail
-  user = User.find_by(email: params[:email])
-
-  # on vérifie si l'utilisateur existe bien ET si on arrive à l'authentifier (méthode bcrypt) avec le mot de passe 
-  if user && user.authenticate(params)
-    session[:user_id] = user.id
-    # redirige où tu veux, avec un flash ou pas
-
-  else
-    flash.now[:danger] = 'Invalid email/password combination'
-    render 'new'
-  end
+		
+    user = User.find_by_email(params[:email])
+    if user && user.authenticate(params[:password])
+      session[:user_id] = user.id
+			flash[:success] = "Welcome back"
+      redirect_to root_path
+    else
+      flash.now[:alert] = "Email or password is invalid"
+      render "new"
+    end
+  end  
+#	
+#	def destroy
+#    session[:user_id] = nil
+#    redirect_to welcome_index_path, notice: "Logged out!"
+#  end
 end
-	end 
-	
